@@ -1,0 +1,78 @@
+.content-pulpo {
+  position: absolute;
+  animation: float 3s ease-in-out infinite;
+  z-index: 2;
+}
+
+.content-pulpo {
+  position: absolute;
+  animation: float 5s ease-in-out infinite;
+  z-index: 2;
+}
+
+.content-pulpo img {
+  width: 250px;
+  height: auto;
+}
+
+@media (max-width: 1024px) {
+  .content-pulpo img {
+    width: 100px;
+    height: auto;
+  }
+}
+
+.content-projects {
+  background-color: #4b4b4b1f;
+}
+
+.w-style{
+  width: 80vw;
+}
+
+.project-container {
+  position: relative;
+  height: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.project-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.3s ease;
+}
+
+.project-container:hover .project-image {
+  opacity: 0.5;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.5); 
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  color: white;
+  text-align: center;
+}
+
+.project-container:hover .overlay {
+  opacity: 1;
+}
+
+.description {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
