@@ -1,5 +1,4 @@
 import React from 'react';
-import Typewriter from 'typewriter-effect';
 import "./styles/home.css";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { MdEmail } from 'react-icons/md';
@@ -16,17 +15,7 @@ export function Home() {
         <div className="responsive-height flex justify-center flex-col bg-blue-400">
             <div className="ml-14">
                 <h1 className="text-4xl text-white font-bold">
-                    <Typewriter
-                        onInit={(typewriter) => {
-                            typewriter
-                                .typeString('Bienvenidos a mi Sitio Web!')
-                                .pauseFor(2000)
-                                .deleteAll()
-                                .typeString('Este es mi Portafolio')
-                                .start()
-
-                        }}
-                    />
+                    Bienvenidos! Este es mi Portafolio.
                 </h1>
                 <p className='mt-4 text-white'>
                     Soy Jorge Martínez, alumno de la carrera de Ingeniería Informática.
