@@ -1,26 +1,26 @@
-body {
-  font-family: 'Arial', sans-serif;
+body, html {
   margin: 0;
   padding: 0;
-  scroll-behavior: smooth;
+  height: 100%;
 }
 
-header {
+header, footer {
+  padding: 1rem;
+  text-align: center;
+}
+
+main {
+  padding: 1rem;
+}
+
+
+#app-container {
   display: flex;
-  justify-content: space-between;
-  padding: 20px;
-  background: #282c34;
-  color: white;
+  flex-direction: column; /* Asegura que los hijos estén en columna */
+  min-height: 100vh; /* El contenedor principal ocupa toda la altura del viewport */
 }
 
-section {
-  padding: 60px;
-  text-align: center;
+#main-content {
+  flex: 1; /* Permite que el contenido principal se expanda */
 }
 
-footer {
-  padding: 20px;
-  background: #282c34;
-  color: white;
-  text-align: center;
-}

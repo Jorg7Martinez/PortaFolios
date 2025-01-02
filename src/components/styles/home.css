@@ -32,6 +32,9 @@ body {
   width: auto;
 }
 
+.responsive-height {
+  height: 100vh;
+}
 @keyframes float {
   0% {
     transform: translateY(0);
@@ -82,5 +85,15 @@ body {
   }
   100% {
     transform: translate(160px, -60px);
+  }
+}
+
+@media (max-width: 500px) {
+  .content-tentacle {
+    display: none;
+  }
+
+  .responsive-height {
+    height: auto;
   }
 }

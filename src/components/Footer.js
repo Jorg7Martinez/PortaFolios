@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 export function Footer() {
   return (
-    <footer className=" bg-footer text-white py-6">
+    <footer className="bg-footer text-white py-6">
       <div className="container mx-auto flex flex-col md:flex-row justify-between items-center">
         {/* Section 1: Logo or Brand */}
         <div className="mb-4 md:mb-0">

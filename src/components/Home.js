@@ -13,7 +13,7 @@ export function Home() {
     };
 
     return (
-        <div className="h-screen flex justify-center flex-col bg-blue-400">
+        <div className="responsive-height flex justify-center flex-col bg-blue-400">
             <div className="ml-14">
                 <h1 className="text-4xl text-white font-bold">
                     <Typewriter

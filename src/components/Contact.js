@@ -2,13 +2,25 @@ import React from 'react';
 import emailjs from 'emailjs-com';
 import "./styles/contact.css";
 import contactImage from '../assets/contact.png';
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 const sendEmail = (e) => {
   e.preventDefault();
-  emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', e.target, 'SAdTFTY3wbPGv4SB8')
-    .then((result) => alert('Mensaje enviado!'))
-    .catch((error) => console.log(error));
+  emailjs.sendForm('service_f7j1o8p', 'template_9rojlu4', e.target, 'SAdTFTY3wbPGv4SB8')
+    .then((result) => {
+      toast.success('Mensaje enviado!', {
+        autoClose: 5000,
+      });
+    })
+    .catch((error) => {
+      toast.error('Hubo un error al enviar el mensaje. Inténtalo de nuevo.', {
+        autoClose: 5000,
+      });
+    });
 };
+
 
 export const Contact = () => (
   <div
