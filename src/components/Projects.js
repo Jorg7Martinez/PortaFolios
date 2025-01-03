@@ -15,9 +15,9 @@ export const Projects = () => {
             }}
         >
 
-            {/* <div className="content-pulpo">
+            <div className="content-pulpo">
                 <img src="/pulpo.png" />
-            </div> */}
+            </div>
 
             <div className="text-center">
                 <h1 className="text-4xl text-white font-bold mt-10">Proyectos</h1>
@@ -36,7 +36,7 @@ export const Projects = () => {
                             <FiExternalLink
                                 size={25}
                                 onClick={() => window.open('https://appsol.com.py/psicologos/cristina-espinol/', '_blank', 'noopener,noreferrer')}
-                                className="text-white  transition transform duration-300 hover:scale-125 cursor-pointer z-50"
+                                className="text-white  transition transform duration-300 hover:scale-125 cursor-pointer z-50 imgIcons"
                             />
                         </div>
                     </div>
@@ -51,7 +51,7 @@ export const Projects = () => {
                             <FaGithub
                                 size={25}
                                 onClick={() => window.open('https://github.com/Jorg7Martinez/PetFriend', '_blank', 'noopener,noreferrer')}
-                                className="text-white  transition transform duration-300 hover:scale-125 cursor-pointer z-50"
+                                className="text-white  transition transform duration-300 hover:scale-125 cursor-pointer z-50 imgIcons"
                             />
                         </div>
                     </div>
@@ -65,7 +65,7 @@ export const Projects = () => {
                             <FaGithub
                                 size={25}
                                 onClick={() => window.open('https://github.com/eemilianomiranda/readme-frontend?tab=readme-ov-file', '_blank', 'noopener,noreferrer')}
-                                className="text-white  transition transform duration-300 hover:scale-125 cursor-pointer z-50"
+                                className="text-white  transition transform duration-300 hover:scale-125 cursor-pointer z-50 imgIcons"
                             />
 
                         </div>
@@ -81,12 +81,12 @@ export const Projects = () => {
                                 <FaGithub
                                     size={25}
                                     onClick={() => window.open('https://github.com/EnriqueRiosUniversidad/Glutiny', '_blank', 'noopener,noreferrer')}
-                                    className="text-white  transition transform duration-300 hover:scale-125 cursor-pointer mr-10 z-50"
+                                    className="text-white  transition transform duration-300 hover:scale-125 cursor-pointer mr-10 z-50 imgIcons"
                                 />
                                 <FiExternalLink
                                     size={25}
                                     onClick={() => window.open('https://llamaz01.github.io/PortafolioGlutinny/', '_blank', 'noopener,noreferrer')}
-                                    className="text-white  transition transform duration-300 hover:scale-125 cursor-pointer z-50"
+                                    className="text-white  transition transform duration-300 hover:scale-125 cursor-pointer z-50 imgIcons"
                                 />
                             </div>
                         </div>
@@ -95,7 +95,7 @@ export const Projects = () => {
                     <div className="project-container">
                         <img src="trabajo5.gif" alt="Proyecto " className="project-image" />
                         <div className="overlay">
-                        <p className="description"><strong>Happy Work</strong></p>
+                            <p className="description"><strong>Happy Work</strong></p>
                             <p className="description">React, TailwindCSS, Mongo, Express</p>
                             <p className="description">Los usuarios pueden comentar y puntuar su experiencia laboral en diferentes empresas. Su objetivo es ofrecer una visión general y transparente sobre el ambiente de trabajo de una empresa a quienes desean postularse a un empleo en ella</p>
 
@@ -103,7 +103,7 @@ export const Projects = () => {
                                 <FiExternalLink
                                     size={25}
                                     onClick={() => window.open('https://happy-work.vercel.app/home', '_blank', 'noopener,noreferrer')}
-                                    className="text-white  transition transform duration-300 hover:scale-125 cursor-pointer z-50"
+                                    className="text-white  transition transform duration-300 hover:scale-125 cursor-pointer z-50 imgIcons"
                                 />
                             </div>
                         </div>
